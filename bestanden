@@ -1,0 +1,9 @@
+mini-escape/         ← root van repository
+│
+├─ stap1.html        ← eerste puzzel (letters vinden)
+├─ stap2.html        ← keuze-puzzel
+├─ stap3.html        ← finale code
+├─ finale.html       ← motivatie / eindpagina
+├─ slot.png          ← afbeelding slot (voor stap1)
+├─ style.css         ← optioneel, gemeenschappelijke styling
+└─ README.md         ← optioneel, uitleg project

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini Escape - Stap 1</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; text-align: center; background-color: #f8f8f8; }
+input { font-size: 1.2em; padding: 5px; width: 150px; }
+button { padding: 5px 15px; font-size: 1em; margin-top: 10px; }
+#feedback { margin-top: 15px; color: red; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h2>Stap 1 – Ontgrendel het slot</h2>
+<p>Klik op het slot om letters te onthullen. Vul daarna het woord in dat je hebt gevonden:</p>
+
+<!-- Hier kan je een afbeelding van slot toevoegen -->
+<img src="slot.png" alt="Slot" style="width:150px;margin:15px;"><br>
+
+<input type="text" id="antwoord" placeholder="Vul hier in">
+<br>
+<button onclick="checkAnswer()">Verstuur</button>
+
+<p id="feedback"></p>
+
+<script>
+function checkAnswer() {
+    var input = document.getElementById("antwoord").value.toUpperCase().trim();
+    if(input === "MOTIE") {
+        window.location.href = "stap2.html"; // link naar volgende stap
+    } else {
+        document.getElementById("feedback").innerHTML = "Nog op slot? Probeer opnieuw!";
+    }
+}
+</script>
+
+</body>
+</html>
